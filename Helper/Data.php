@@ -11,14 +11,13 @@ class Data
             return $url;
         }
 
-        $host = $urlParts['host'];
         $path = $urlParts['path'];
 
         parse_str($urlParts['query'] ?? '', $params);
         $params = $this->getQueryParams($params);
         $query = http_build_query($params, '', ',');
 
-        return "{$host}/cdn-cgi/image/{$query}{$path}";
+        return "/cdn-cgi/image/{$query}{$path}";
     }
 
     public function getQueryParams(array $params): array
