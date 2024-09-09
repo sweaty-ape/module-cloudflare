@@ -1,0 +1,15 @@
+{
+    "name": "sweaty-ape/module-cloudflare",
+    "description": "Magento image optimization using Cloudflare Image Optimization",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SweatyApe\\Cloudflare\\": ""
+        }
+    }
+}
