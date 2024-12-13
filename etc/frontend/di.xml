@@ -7,4 +7,7 @@
     <type name="Magento\Catalog\Model\View\Asset\Image">
         <plugin name="sweatyape_cloudflare" type="SweatyApe\Cloudflare\Plugin\CatalogAssetImage"/>
     </type>
+    <type name="Swissup\EasySlide\Block\Image">
+        <plugin name="sweatyape_cloudflare" type="SweatyApe\Cloudflare\Plugin\SwissupSliderImage"/>
+    </type>
 </config>
